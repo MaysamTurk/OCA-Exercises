@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function start() {
+
+            var name = '';
+            var Math = 0;
+            var English = 0;
+            var Arabic = 0;
+            var Bio = 0;
+            var Computer = 0;
+            var Religion = 0;
+            var Sum = 0;
+
+            const subjectsNumber = 6
+
+
+            document.getElementById("btnStart").style.display = 'none';
+            document.getElementById("lblStart").style.display = 'none';
+
+            name = window.prompt("Enter student name: ");
+            document.getElementById("lblName").innerText = "student name: " + name;
+
+            alert("student name is " + name);
+
+            Math = window.prompt("Math mark: ");
+            while (Math > 100 || Math < 0) { Math = window.prompt("Math mark should be between 0-100: "); }
+
+
+            English = window.prompt("English mark: ");
+            while (English > 100 || English < 0) { English = window.prompt("English mark should be between 0-100: "); }
+
+            Arabic = window.prompt("Arabic mark: ");
+            while (Arabic > 100 || Arabic < 0) { Arabic = window.prompt("Arabic mark should be between 0-100: "); }
+
+            Bio = window.prompt("Bio mark: ");
+            while (Bio > 100 || Bio < 0) { Bio = window.prompt("Bio mark should be between 0-100: "); }
+
+            Computer = window.prompt("Computer mark: ");
+            while (Computer > 100 || Computer < 0) { Computer = window.prompt("Computer mark should be between 0-100: "); }
+
+            Religion = window.prompt("Religion mark: ");
+            while (Religion > 100 || Religion < 0) { Religion = window.prompt("Religion mark should be between 0-100: "); }
+
+
+            sum = Number(Math) + Number(English) + Number(Arabic) + Number(Bio) + Number(Computer) + Number(Religion);
+            var avg = Number(sum) / Number(subjectsNumber)
+            document.getElementById("lblSum").innerText = "sum: " + sum;
+            document.getElementById("lblAvg").innerText = "total average: " + avg;
+
+            document.getElementById("btnReset").style.display = 'block';
+
+            if (avg >= 90)
+                document.getElementById("lblResult").innerText = "Excellent";
+            else if (avg >= 80)
+                document.getElementById("lblResult").innerText = "Very good";
+            else if (avg >= 70)
+                document.getElementById("lblResult").innerText = "Good";
+            else if (avg >= 60)
+                document.getElementById("lblResult").innerText = "Average";
+            else if (avg >= 50)
+                document.getElementById("lblResult").innerText = "Pass";
+            else if (avg < 50)
+                document.getElementById("lblResult").innerText = "Fail";
+
+        }
+
+        function restart() {
+            document.getElementById("btnReset").style.display = 'none';
+            document.getElementById("btnStart").style.display = 'block';
+            document.getElementById("lblStart").style.display = 'block';
+
+            document.getElementById("lblName").innerText = "";
+            document.getElementById("lblSum").innerText = "";
+            document.getElementById("lblAvg").innerText = "";
+            document.getElementById("lblResult").innerText = "";
+        }
+
+    </script>
+
+    <h2>Marks average calculator</h2>
+
+    <p id="lblStart">press below button to start</p>
+
+    <button id="btnStart" onclick="start()">start</button>
+
+    <p id="lblName"></p>
+
+    <p id="lblSum"></p>
+
+    <h2 id="lblAvg"></h2>
+
+    <h1 id="lblResult"></h1>
+
+    <button id="btnReset" style="display:none" onclick="restart()">restart</button>
+
+</body>
+</html>

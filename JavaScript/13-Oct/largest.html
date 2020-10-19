@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+<body>
+    <h3>What is the largest number of those numbers (-5, -2, -6, 0, -1) ?</h3>
+    <p>Press below to show the result:</p>
+        <button onclick="myFunction()">Largest Number</button>
+    
+    <script>
+a=-5;
+b=-2;
+c=-6;
+d= 0;
+f=-1;
+function myFunction(){
+    
+if (a>b && a>c && a>d && a>f)
+{
+    document.write(a); alert(a);
+
+}
+else if (b>a && b>c && b>d && b>f)
+{
+    document.write(b); alert(b);
+
+}
+else if (c>a && c>b && c>d && c>f)
+{
+    document.write(c); alert(c);
+
+}
+else if (d>a && d>c && d>b && d>f)
+{
+    document.write(d); alert(d);
+
+}
+else
+{
+    document.write(f); alert(f);
+
+}
+}
+
+
+
+    </script>
+</body>
+</html>

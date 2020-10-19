@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Create a function called oddArray
+// that accept an array
+// and return an array have only the odd elemnts
+​
+// var nums= [1,2,3,8,9]
+// Ex: oddArray(nums) => [1,3,9]
+​
+// ** solve it one time using for loop and another using while loop
+// **try more cases by your self
+​
+​
+/******* Start Your Code *********/
+​
+function oddArray(){
+var oddarray = [1, 2, 3, 8, 9];
+document.write(array_odd(oddarray));
+
+function array_odd(nums) {
+
+    var odd = [];
+    for (i = 0; i < nums.length; i++) {
+        if (Number(nums[i]) % 2 != 0) {
+            odd.push(nums[i]);
+        }
+    }
+    return odd;
+}
+}
+
+function oddArray();
+​
+/******* End Your Code ********* */
+​
+​
+​
+​
+// Create a function called aveArray
+// that accept an array
+// and return the average of the numbers inside this array
+​
+// var nums= [1,2,3,8,9]
+// Ex: aveArray(nums) => 4.6
+​
+// var nums2= [1,2,3,8,9,77]
+// Ex: aveArray(nums) => 16.6
+​
+// ** solve it one time using for loop and another using while loop
+// **try more cases by your self
+​
+​
+/******* Start Your Code *********/
+​
+​
+function aveArray_for(nums)
+{
+    var sum = 0;
+    for (i = 0; i < nums.length; i++) {
+        sum += Number(nums[i]);
+    }
+    document.write(Number(sum) / Number(nums.length));
+}
+
+function aveArray_while(nums)
+{
+    var i = 0;
+    var sum = 0;
+    while (i < nums.length) {
+        sum += Number(nums[i]);
+        i++;
+    }
+    document.write(Number(sum) / Number(nums.length));
+}
+
+function aveArray_for(nums);
+
+
+/******* End Your Code ********* */
+​
+​
+​</script>
+​
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigglypuff</title>
+    <style>
+        * {
+            font-family:Sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(3, 1fr);
+           
+        }  
+        .header {
+            background-color: #E3ABB5;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border:black solid 1px;
+            margin: -8.3px;
+
+            
+        } 
+        .picture {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin: 6rem;
+            
+
+        }   
+        .about {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin-left: 5rem;
+            margin-top: 6rem;
+            margin-right: 10rem;   
+            margin-bottom: 4rem;  
+            font-size: 1.1rem;
+            background-color: #008393;
+            color: white;
+            padding-left:3rem;
+
+            border-radius: 1.5rem; 
+  }  
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            background-color:#040405;
+            color: white;
+            border:rgb(0, 0, 0) solid 2px;
+            margin: -8px;
+            margin-top: 20px;
+        }   
+        @media (max-width: 1250px) {
+            .container {
+                grid-template-areas:
+                    "header header "
+                    "picture about"
+                    "footer footer"
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+         <h2>Jigglypuff</h2>
+        </header>
+        <div class="picture">
+            <img src="https://i.stack.imgur.com/Z0r5Wm.jpg" alt="jigglypuff" style="width:130%;">
+        </div>
+        <div class="about">
+            <h2>𝕁igglypuff ♪</h2><hr>
+            <p> 𝕎as one of 151 different designs by Game Freak's<br> character development team and finalized by Ken Sugimori, for the <br> of Pocket Monsters games Red and Green, which were localized outside<br> Japan as Pokémon Red and Blue. Its Japanese name "Purin",<br> derives from the Japanese loanword for custard or pudding.<br> Nintendo decided to give the various Pokémon species "clever and descriptive<br> names" related to their appearance or features when translating the game<br> for western audiences as a means to make the characters more relatable to<br> American children. Deciding to use a name better suited for its<br> jelly-like appearance, the species was renamed "Jigglypuff", a combination<br> of the words "jiggly" and "puff". When a Jigglypuff is exposed to a<br> Moon Stone, it evolves into Wigglytuff. It has a pre-evolution, Igglybuff,<br> which evolves when it reaches a certain point of happiness.</p>
+        </div>
+        <div class="footer">
+<p>This page was last edited on 11 October 2020</p>
+        </div>
+    </div>
+</body>
+</html>
